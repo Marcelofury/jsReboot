@@ -5,3 +5,5 @@ let student = 'Marcel'; // string
 let isActive = true; //Boolean
 
 let x = null; // intentional empty value
+
+let y;  // undefined (not assigned)
