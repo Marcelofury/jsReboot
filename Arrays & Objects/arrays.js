@@ -32,3 +32,8 @@ fruits.shift();
 // accessing and midfying arrays
 
 fruits[1] = 'grapes';
+
+// arrays are mutable even when declared with cont
+
+const num = [1,2];
+num.push(3);
