@@ -28,3 +28,7 @@ fruits.pop();
 
 //remove from start
 fruits.shift();
+
+// accessing and midfying arrays
+
+fruits[1] = 'grapes';
