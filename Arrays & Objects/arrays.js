@@ -20,4 +20,11 @@ fruits.length; // 3
 fruits.push('orange');
 
 // add to start
-fruits.unshift('pineapple')
+fruits.unshift('pineapple');
+
+// remove element
+//remove from end
+fruits.pop();
+
+//remove from start
+fruits.shift();
