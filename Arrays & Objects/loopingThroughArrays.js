@@ -7,6 +7,6 @@ for (let i = 0; i < fruits.length; i++){
 }
 
 // for ...of loop (clean and modern)
-//for(const fruit of fruits){
-  //  console.log(fruit);
-//}
+for(const fruit of fruits){
+    console.log(fruit);
+}
