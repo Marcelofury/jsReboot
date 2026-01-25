@@ -11,4 +11,10 @@ const mixed = [
 ];
 
 // common array operations
-fruits.length;
+
+// length of an array
+fruits.length; // 3
+
+// add element 
+fruits.push('orange');
+
