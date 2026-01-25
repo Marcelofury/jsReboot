@@ -16,5 +16,8 @@ const mixed = [
 fruits.length; // 3
 
 // add element 
+//add to end
 fruits.push('orange');
 
+// add to start
+fruits.unshift('pineapple')
