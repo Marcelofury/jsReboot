@@ -14,3 +14,7 @@ console.log(user);
 //update property
 user.age = 23;
 console.log(user);
+
+// delete property
+delete user.height;
+console.log(user);
