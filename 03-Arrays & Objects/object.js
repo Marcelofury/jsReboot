@@ -64,3 +64,10 @@ console.log(Object.keys(user2));
 // Object.values()
 
 console.log(Object.values(user2));
+
+// Object.entries()
+console.log(Object.entries(user2))
+// perfect for looping
+for (const [key, value] of Object.entries(user2)){
+    console.log(key,value)
+}
