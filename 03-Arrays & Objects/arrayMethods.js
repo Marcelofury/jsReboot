@@ -29,3 +29,8 @@ const users = [
     {name: 'John', age: 17, active: false},
     {name: 'Peter', age:30, active:true}
 ];
+
+// Task: Get names of active users older than 18
+const result = users.filter( user => user.active && user.age > 18)
+
+console.log(result)
