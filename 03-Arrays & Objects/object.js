@@ -50,4 +50,9 @@ console.log(user2.greet());
 // this refers to the object calling the method
 
 
+// looping through objects
+// for ..in
 
+for (let key in user2){
+    console.log(key, user2[key]);
+};
