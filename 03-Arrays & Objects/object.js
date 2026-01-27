@@ -31,3 +31,23 @@ const user1 = {
 console.log(user1);
 
 console.log(user1.address.city);
+
+
+// objects with methods (function inside objects)
+const user2 = {
+  name: "Marcel",
+  address: {
+    country: "Uganda",
+    city: "Kampala"
+  },
+  greet: function(){
+    return `Hello, my name is ${this.name}`
+  }
+};
+console.log(user2);
+console.log(user2.greet());
+
+// this refers to the object calling the method
+
+
+
