@@ -18,3 +18,16 @@ console.log(user);
 // delete property
 delete user.height;
 console.log(user);
+//objects are mutable
+
+// objects inside objects
+const user1 = {
+  name: "Marcel",
+  address: {
+    country: "Uganda",
+    city: "Kampala"
+  }
+};
+console.log(user1);
+
+console.log(user1.address.city);
