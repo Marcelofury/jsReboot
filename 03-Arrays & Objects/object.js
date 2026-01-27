@@ -56,3 +56,7 @@ console.log(user2.greet());
 for (let key in user2){
     console.log(key, user2[key]);
 };
+
+
+// object.keys()
+console.log(Object.keys(user2));
