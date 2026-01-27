@@ -14,3 +14,17 @@ console.log(squared);
 // filter -- select data 
 const evenNumbers = numbers.filter(num => num % 2 === 0);
 console.log(evenNumbers)
+
+//reduce combines data (most confusing)
+const sum = numbers.reduce((total,sum) => {
+    return total + sum;
+}, 0)
+
+console.log(sum)
+
+//Real World Example (API Data Style)
+const users = [
+    {name: 'Amina', age: 22, active: true},
+    {name: 'John', age: 17, active: false},
+    {name: 'Peter', age:30, active:true}
+];
