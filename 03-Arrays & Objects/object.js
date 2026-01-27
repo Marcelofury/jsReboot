@@ -60,3 +60,7 @@ for (let key in user2){
 
 // object.keys()
 console.log(Object.keys(user2));
+
+// Object.values()
+
+console.log(Object.values(user2));
