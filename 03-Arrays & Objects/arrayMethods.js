@@ -9,3 +9,8 @@ const squared = numbers.map( num => num * num);
 console.log(squared);
 
 //map never changes the orriginal array
+
+
+// filter -- select data 
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers)
