@@ -20,6 +20,7 @@ const sum = numbers.reduce((total,sum) => {
     return total + sum;
 }, 0)
 
+
 console.log(sum)
 
 //Real World Example (API Data Style)
