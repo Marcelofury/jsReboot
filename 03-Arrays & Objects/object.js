@@ -4,9 +4,13 @@ const user = {
     role: 'student'
 };
 
-console.log(user)
+console.log(user);
 
 //Adding,Updating and deleting Properties
 // Add new property
 user.height = 180;
-user.age = 23
+console.log(user);
+
+//update property
+user.age = 23;
+console.log(user);
