@@ -68,3 +68,14 @@ app.get('/api/users', (req, res) => {
 });
 
 //frontend consumes JSON not HTML
+
+// MIDDLEWARE (most important Express concept)
+//What is a Middleware?
+// -- A function that runs before the final route
+
+app.use((req,res) => {
+    console.log('Request receieved');
+    next();
+})
+
+// next() lets request continue
