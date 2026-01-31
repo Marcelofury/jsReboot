@@ -79,3 +79,11 @@ app.use((req,res) => {
 })
 
 // next() lets request continue
+
+// Built in Middleware (MUST KNOW)
+app.use(express.json());
+// allows reading JSON body:
+app.post('/api/users', (req, res) => {
+    console.log(req.body);
+    res.send('User received');
+});
