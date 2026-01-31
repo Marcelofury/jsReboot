@@ -18,3 +18,26 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     res.send('Home Page');
 })
+
+
+// Multiple routes
+
+app.get('/about', (req, res) => {
+    res.send('About Page');
+});
+
+app.get('/contact', (req,res) => {
+    res.send('Contact Page');
+}); 
+
+// routes respond to HTTP requests
+
+
+// HTTP METHODS 
+// GET ---- read data
+// POST ---- create data
+// PUT ---- update data
+//DELETE ---- delete data 
+
+
+// example
