@@ -13,3 +13,16 @@ console.log(data);
 console.log('Done');
 
 // problem: Node stop everything and wait for file to finish reading
+
+
+// Non-blocking (GOOD Node style)
+
+const fs = require('fs');
+
+fs.readFile('file.txt', 'utf-8', (err,data) => {
+    console.log(data);
+});
+
+console.log('Done');
+
+// node delegates slow tasks, keeps running
