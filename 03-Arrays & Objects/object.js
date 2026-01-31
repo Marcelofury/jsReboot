@@ -71,3 +71,4 @@ console.log(Object.entries(user2))
 for (const [key, value] of Object.entries(user2)){
     console.log(key,value)
 }
+
