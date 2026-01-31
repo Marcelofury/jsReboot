@@ -72,3 +72,19 @@ for (const [key, value] of Object.entries(user2)){
     console.log(key,value)
 }
 
+
+// Object destructuring
+
+const user3 = {
+  name: 'Marcel',
+  age: 23,
+  role: 'Student'
+};
+
+
+const {name,role} = user3;
+
+//Equivalent to
+
+const name = user.name;
+const role = user.role;
