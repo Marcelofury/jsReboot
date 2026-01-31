@@ -48,3 +48,23 @@ app.post('/users', (req,res) => {
 //This is  REST API thinking
 
 
+// req and res objects 
+//request info
+
+app.get((req, res) => {
+    console.log(req.method);
+    console.log(req.url);
+    console.log(req.headers);
+    res.send('check console');
+})
+
+// sending JSON (Backend reality)
+
+app.get('/api/users', (req, res) => {
+    res.json([
+        {id: 1, name: 'Amina'},
+        {id:2 , name:'John'}
+    ]);
+});
+
+//frontend consumes JSON not HTML
