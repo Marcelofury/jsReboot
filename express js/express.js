@@ -41,3 +41,10 @@ app.get('/contact', (req,res) => {
 
 
 // example
+
+app.post('/users', (req,res) => {
+    res.send('user created')
+});
+//This is  REST API thinking
+
+
