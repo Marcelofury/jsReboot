@@ -113,3 +113,15 @@ const students = [
   {name: 'John', score: 45},
   {name: 'Peter', score: 60}
 ];
+// get students who passed and return new objects
+
+const passed = students.filter(s => s.score >=50).map(
+  s => (
+    {
+      name:s.name,
+      status:'Passed'
+    }
+  )
+);
+
+console.log(passed);
