@@ -86,9 +86,30 @@ const {name1,role1} = user3;
 
 //Equivalent to
 
-const name1 = user.name1;
-const role1 = user.role1;
+//const name1 = user.name1;
+//const role1 = user.role1;
 
 // rename variables 
 const {name1 : fullName } = user3;
 console.log(user3);
+
+// spread operator with objects
+
+const user3Copy = {...user3};
+console.log(user3Copy)// good
+
+//Add/Override properties
+
+const updateUser = {
+  ...user3,
+  role: 'Developer'
+};
+
+
+// OBJECTS + ARRAYS
+
+const students = [
+  {name : 'Amina', score: 80},
+  {name: 'John', score: 45},
+  {name: 'Peter', score: 60}
+];
