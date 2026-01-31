@@ -76,15 +76,19 @@ for (const [key, value] of Object.entries(user2)){
 // Object destructuring
 
 const user3 = {
-  name: 'Marcel',
+  name1: 'Marcel',
   age: 23,
-  role: 'Student'
+  role1: 'Student'
 };
 
 
-const {name,role} = user3;
+const {name1,role1} = user3;
 
 //Equivalent to
 
-const name = user.name;
-const role = user.role;
+const name1 = user.name1;
+const role1 = user.role1;
+
+// rename variables 
+const {name1 : fullName } = user3;
+console.log(user3);
