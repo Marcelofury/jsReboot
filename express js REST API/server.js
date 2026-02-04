@@ -28,3 +28,8 @@ app.delete('/users/:id', (req, res) => {
     const userId = req.params.id;
     res.json({message: `User with ID ${userId} deleted`});
 });
+
+// Start the server 
+app.listenerCount(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
