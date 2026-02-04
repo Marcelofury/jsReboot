@@ -7,6 +7,7 @@ const controller = require('../controllers/userController')
 
 router.get('/', controller.getUsers);
 router.post('/', controller.createUser);
+// This separation is industry standard
 
 // creating routes
 router.get('/', (req, res) => {
