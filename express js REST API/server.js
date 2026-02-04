@@ -6,7 +6,7 @@ const port = 3000;
 app.use(express.json()); // Middleware to parse JSON bodies
 
 // Define a route for GET requests
-app.get('users', (req,res)=>{
+app.get('/users', (req,res)=>{
     res.json({message : 'returning list of users'});
 });
 
@@ -30,6 +30,14 @@ app.delete('/users/:id', (req, res) => {
 });
 
 // Start the server 
-app.listenerCount(port, () => {
+app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
+
+// ERROR HANDLING (IMPORTANT)
+
+app.get('/error', (req, res) => {
+    res.status(500).json({error : 'something went wrong'})
+});
+
+// GLOBAL ERROR HANDLER
