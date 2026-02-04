@@ -87,3 +87,10 @@ app.post('/api/users', (req, res) => {
     console.log(req.body);
     res.send('User received');
 });
+
+
+// ROUTE PARAMETERS
+app.get('/users/:id', (req,res) => {
+    res.send(`User ID: ${req.params.id}`);
+});
+//used for dynamic data 
