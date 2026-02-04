@@ -13,6 +13,9 @@ router.post('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    res.json({message: `update user ${req.params.id}`});
+    res.json({message: `Get user ${req.params.id}`});
 });
 
+router.put('/:id', (req, res) => {
+    res.json({message: ` Update user ${req.params.id}`});
+});
