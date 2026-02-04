@@ -15,3 +15,10 @@ app.post('/users',(req, res) => {
     const newUser = req.body;
     res.json({message: 'User Created', user: newUser});
 });
+
+// define a route for PUT requests
+app.put('/users/:id', (req, res) => {
+      const UserId = req.params.id;
+      const updatedUser = req.body;
+      res.json({message: `User with ID ${UserId} updated`, updatedUser});
+})
