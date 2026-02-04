@@ -101,3 +101,16 @@ app.get('search', (req, res) => {
 });    
 // URL: /search?name=marcel&age=20    pgsql
 // Query params != route params
+
+
+// SIMPLE REST API EXAMPLE (REALISTIC)
+const users =[];
+app.post('/users', (req, res) => {
+    users.push(req.body);
+    res.status(201).json(users);
+});
+app.get('/users', (req, res) => {
+    res.json(users);
+});
+
+// This is a backend logic, no database yet
