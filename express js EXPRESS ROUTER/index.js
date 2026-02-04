@@ -4,3 +4,5 @@ const app = express();
 app.use(express.json()); // Middleware to parse JSON bodies
 
 const userRoutes = require('./routes/users'); // Importing the user routes
+
+app.use('/users', userRoutes); // Using the user routes with /users prefix
