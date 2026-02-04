@@ -9,3 +9,9 @@ app.use(express.json()); // Middleware to parse JSON bodies
 app.get('users', (req,res)=>{
     res.json({message : 'returning list of users'});
 });
+
+//Define a route for POST requests
+app.post('/users',(req, res) => {
+    const newUser = req.body;
+    res.json({message: 'User Created', user: newUser});
+});
