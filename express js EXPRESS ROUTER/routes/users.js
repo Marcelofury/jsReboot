@@ -9,6 +9,10 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    res.json({message : 'cretae user'})
+    res.json({message : 'create user'})
+});
+
+router.get('/:id', (req, res) => {
+    res.json({message: `update user ${req.params.id}`});
 });
 
