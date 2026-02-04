@@ -94,3 +94,10 @@ app.get('/users/:id', (req,res) => {
     res.send(`User ID: ${req.params.id}`);
 });
 //used for dynamic data 
+
+//QUERY PARAMETERS
+app.get('search', (req, res) => {
+    res.send(req.query);
+});    
+// URL: /search?name=marcel&age=20    pgsql
+// Query params != route params
