@@ -26,3 +26,6 @@ router.delete('/:id', (req, res) => {
 
 module.exports = router;
 
+
+// router works like app, but scoped
+
