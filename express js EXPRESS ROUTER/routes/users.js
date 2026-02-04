@@ -2,6 +2,7 @@
 // initialization
 const express = require('express');
 const router = express.Router();
+const controller = require('../controllers/userController')
 
 // creating routes
 router.get('/', (req, res) => {
