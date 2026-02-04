@@ -21,4 +21,10 @@ app.put('/users/:id', (req, res) => {
       const UserId = req.params.id;
       const updatedUser = req.body;
       res.json({message: `User with ID ${UserId} updated`, updatedUser});
-})
+});
+
+// Define a route for DELETE requests
+app.delete('/users/:id', (req, res) => {
+    const userId = req.params.id;
+    res.json({message: `User with ID ${userId} deleted`});
+});
